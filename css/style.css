@@ -1,0 +1,257 @@
+/* GENERAL */
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 0;
+}
+.button1{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #de8802;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.button1:hover{
+    background: #efc481;
+    color: #fff;
+    text-decoration: none;
+}
+.carousel-indicators li{
+    border: 1px solid #de8802;
+}
+.carousel-indicators li.active{
+    background:#de8802;
+}
+/* MENU */
+.navbar{
+    background: #fff;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+.navbar-nav li{
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar li.home{
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 40px;
+}
+.navbar-nav li.home a:hover, .navbar-nav li.home.active a{
+    color: #000 !important;
+}
+.navbar .navbar-nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse{
+    text-align: center;
+}
+.navbar li a{
+    color: #0a0a0a !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+    color: #de8802 !important;
+}
+.navbar-default .navbar-toggle{
+    border-style: none;
+}
+.icon-bar{
+    background-color: #0a0a0a !important;
+}
+/* HOME */
+#home{
+    background: url('../images/remy01.jpg')top center no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+}
+.logo{
+    text-align: center;
+    padding-top: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .logo{
+    height: 95px;
+    width: 385px;
+    margin: 0 auto;  
+    }
+}
+#presentation{
+    background: #fff;
+    padding-top: 70px;
+}
+#presentation h1{
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 22px;
+    color: #000;
+}
+#presentation h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+#presentation p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.photo{
+    text-align: center;
+}
+.paragraphe{
+    width: 400px;
+    word-wrap: break-word;
+    text-align: justify;
+    margin: 0 auto;
+}
+.orange{
+    color: #de8802;
+}
+/* WALL */
+#wall{
+    background: url('../images/remy02.jpg')top left no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+    min-height: 915px;
+}
+.white-bloc{
+    background-color: #fff;
+    height: 140px;    
+}
+@media screen and (max-width: 1024px) {
+  .white-bloc{
+    height: 120px;  
+    }
+}
+.wall-info{
+    text-align: center;
+    width: 350px;
+    max-height: 100%;
+    margin-left: 350px;
+}
+@media screen and (max-width: 1024px) {
+  .wall-info{
+    margin: 0 auto;
+  }
+}
+#wall .title{
+    height: 138px;
+    min-width: 458px;
+    margin-top: -45px;
+}
+@media screen and (max-width: 1024px) {
+  #wall .title{
+    height: 124px;
+    min-width: 410px;
+    margin-top: -40px;
+  }
+}
+.wall-block{
+    margin-top: 30px;
+    word-wrap: break-word;
+    background:rgba(255, 255, 255, 0.5);
+    outline: 15px solid rgba(255, 255, 255, 0.5);    
+}
+.wall-block a{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;    
+}
+.wall-block p{
+    text-align: left;
+}
+/* MODEL */
+#model{
+    background-color: #fff;
+    background-size: cover;
+    height: 100%;
+    min-height: 925px;
+}
+#model .title{
+    padding-top: 90px;
+    text-align: center;
+}
+.model-exemple{
+    text-align: center;
+    padding-top: 10px;
+}
+.exemple-photo img{
+    padding: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    transition: 0.7s;
+}
+.exemple-photo img:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+.model-exemple a{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#model .background{
+    background: url('../images/model-bg.jpg')center no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  #model .background{
+    background: none;
+  }
+}
+/* Indicators active image style */
+.carousel .carousel-indicators .active img {
+    border: 2px solid #de8802;
+    opacity: 0.5;
+}
+/* PORTRAITS */
+#portraits{
+    background: #ae6a02;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#portraits .background{
+    background: url('../images/portraits.jpg')top center no-repeat;
+    height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  #portraits .background{
+    background: url('../images/s-portraits.jpg')top right no-repeat;
+    height: 100%;
+  }
+}
+#portraits .title{
+    height: 139px;
+    min-width: 458px;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+@media screen and (max-width: 1024px) {
+  #portraits .title{
+    height: 124px;
+    min-width: 410px;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 0;
+  }
+}
+#portraits div .button{
+    text-align: center;
+}
+#portraits a{
+    cursor: pointer;
+}
