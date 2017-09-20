@@ -258,7 +258,6 @@ img{
 
 /* 480 */
 @media only screen 
-and (min-width : 480px) 
 and (max-width : 640px) {
     #wall{
         background: url('../images/remy02-480.jpg')top center no-repeat fixed;
@@ -267,21 +266,18 @@ and (max-width : 640px) {
     }
 }
 @media only screen 
-and (min-width : 480px) 
 and (max-width : 640px) {
   .white-bloc{
     height: 100px;  
     }
 }
 @media only screen 
-and (min-width : 480px) 
 and (max-width : 640px) {
     .wall-info{
         margin: 0 auto;
     }
 }
 @media only screen 
-and (min-width : 480px) 
 and (max-width : 640px) {
     #wall .title{
         height: 96px;
@@ -290,8 +286,7 @@ and (max-width : 640px) {
     }
 }
 @media only screen 
-and (min-width : 480px) 
-and (max-width : 568px) {
+and (max-width : 640px) {
     .wall-block{
         width: 340px;
         height: fit-content;
