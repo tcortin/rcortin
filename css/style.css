@@ -258,8 +258,8 @@ img{
 
 /* 480 */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (min-width : 480px) 
+and (max-width : 640px) {
     #wall{
         background: url('../images/remy02-480.jpg')top center no-repeat fixed;
         background-size: cover;
@@ -267,22 +267,22 @@ and (max-device-width : 568px) {
     }
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (min-width : 480px) 
+and (max-width : 640px) {
   .white-bloc{
     height: 100px;  
     }
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (min-width : 480px) 
+and (max-width : 640px) {
     .wall-info{
         margin: 0 auto;
     }
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (min-width : 480px) 
+and (max-width : 640px) {
     #wall .title{
         height: 96px;
         width: 320px;
@@ -290,8 +290,8 @@ and (max-device-width : 568px) {
     }
 }
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (min-width : 480px) 
+and (max-width : 568px) {
     .wall-block{
         width: 340px;
         height: fit-content;
