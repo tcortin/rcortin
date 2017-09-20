@@ -264,6 +264,9 @@ and (orientation : portrait) {
     #wall{
         background: url('../images/remy02-480.jpg')top center no-repeat fixed;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         height: 100%;
         min-height: 790px;
     }
