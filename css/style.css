@@ -284,7 +284,7 @@ and (min-width : 320px)
 and (max-width : 568px)
 and (orientation : portrait) {
     #wall{
-        background: url('../images/remy02-480.jpg')top center no-repeat fixed;
+        background: url('../images/remy02-480.jpg')top right no-repeat fixed;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
