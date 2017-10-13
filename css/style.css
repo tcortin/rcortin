@@ -242,14 +242,13 @@ img{
   }
 }
 #portraits .title{
-    height: 139px;
-    width: 458px;
+    height: 85%;
     padding-top: 100px;
     padding-left: 300px;
 }
 @media screen and (max-width: 1024px) {
   #portraits .title{
-    height: 124px;
+    height: 85%;
     width: 410px;
     padding-top: 90px;
     padding-left: 40px;
@@ -283,7 +282,7 @@ and (min-width : 320px)
 and (max-width : 568px)
 and (orientation : portrait) {
     .logo{
-        padding-top: 60%;
+        ;
     }
 }
 @media only screen 
@@ -383,7 +382,7 @@ and (orientation : portrait) {
 and (min-width : 320px) 
 and (max-width : 568px) {
   #portraits .title{
-    height: 124px;
+    height: 85%;
     width: 240px;
     margin: 0 auto;
     padding-top: 80px;
