@@ -282,7 +282,10 @@ and (orientation : portrait) {
         height: 100%;
     }
 }
-@media screen and (max-width: 1024px) {
+@media only screen 
+and (min-width : 569px) 
+and (max-width : 1024px)
+and (orientation : portrait) {
     #home{
         background: url('../images/remy01-1024.jpg')top center no-repeat fixed;
         background-size: cover;
@@ -291,14 +294,6 @@ and (orientation : portrait) {
         -o-background-size: cover;
         background-attachment: fixed;
         height: 100%;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px)
-and (orientation : portrait) {
-    .logo{
-        ;
     }
 }
 @media only screen 
@@ -316,7 +311,10 @@ and (orientation : portrait) {
         min-height: 790px;
     }
 }
-@media screen and (max-width: 1024px) {
+@media only screen 
+and (min-width : 569px) 
+and (max-width : 1024px)
+and (orientation : portrait) {
     #wall{
         background: url('../images/remy02-1024.jpg')top right no-repeat fixed;
         background-size: cover;
