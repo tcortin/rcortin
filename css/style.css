@@ -19,6 +19,7 @@ img{
     text-transform: uppercase;
     color: #fff;
     background-color: #de8802;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px 20px;
     transition: all 0.3s ease-in 0s;
