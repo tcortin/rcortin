@@ -1,7 +1,7 @@
 /* Animation de la scrollbar au changement de section */
 $(function(){
 
-    $(".navbar a, footer a").on("click", function(event){
+    $(".navbar a, footer a, #home a").on("click", function(event){
 
         event.preventDefault();
         var hash = this.hash;
