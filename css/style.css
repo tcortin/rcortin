@@ -80,17 +80,22 @@ img{
 }
 /* HOME */
 #home{
+    z-index: -10;
     background: url('../images/remy01.jpg')top center no-repeat fixed;
     background-size: cover;
     height: 100%;
+    text-align: center;
+}
+#home a{
+    font-size: 50px;
+    color: white;
 }
 .logo{
-    text-align: center;
+    height: 90%;
     padding-top: 80px;
 }
 @media screen and (max-width: 1024px) {
   .logo{
-    height: 95px;
     width: 385px;
     margin: 0 auto;  
     }
@@ -128,6 +133,7 @@ img{
 }
 /* WALL */
 #wall{
+    z-index: -10;
     background: url('../images/remy02.jpg')top left no-repeat fixed;
     background-size: cover;
     height: 100%;
@@ -278,7 +284,7 @@ and (orientation : portrait) {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         height: 100%;
     }
 }
@@ -306,7 +312,7 @@ and (orientation : portrait) {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         height: 100%;
         min-height: 790px;
     }
@@ -367,7 +373,6 @@ and (max-width : 568px) {
 and (min-width : 320px) 
 and (max-width : 568px) {
   .logo{
-    height: 95px;
     width: 280px;
     margin: 0 auto;  
     }
