@@ -15,30 +15,34 @@ img{
 .container{
     padding: 0;
 }
-.button1{
+.button{
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: #fff;
-    background-color: #de8802;
+    background-color: #e34332;
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px 20px;
     transition: all 0.3s ease-in 0s;
 }
-.button1:hover{
-    background: #efc481;
+.button:hover{
+    background: #ee9480;
     color: #fff;
     text-decoration: none;
 }
+.btn-wall{
+    opacity: 0;
+}
 .carousel-indicators li{
-    border: 1px solid #de8802;
+    border: 1px solid #e34332;
 }
 .carousel-indicators li.active{
-    background:#de8802;
+    background:#e34332;
 }
 
 .carousel-control.left, .carousel-control.right {
     background-image: none;
-    color: #de8802;
+    color: #e34332;
 }
 
 
@@ -71,7 +75,7 @@ img{
     color: #0a0a0a !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a{
-    color: #de8802 !important;
+    color: #e34332 !important;
 }
 .navbar-default .navbar-toggle{
     border-style: none;
@@ -85,10 +89,6 @@ img{
     background-size: cover;
     height: 100%;
     text-align: center;
-}
-#home a{
-    font-size: 50px;
-    color: white;
 }
 .logo{
     height: 90%;
@@ -114,6 +114,10 @@ img{
     font-size: 12px;
     margin-bottom: 20px;
 }
+#presentation .paragraphe{
+    left: 50px;
+    opacity: 0;
+}
 #presentation p{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -129,7 +133,7 @@ img{
     margin: 0 auto;
 }
 .orange{
-    color: #de8802;
+    color: #e34332;
 }
 /* WALL */
 #wall{
@@ -199,6 +203,11 @@ img{
     text-align: center;
     padding-top: 10px;
 }
+.exemple-photo{
+    position: relative;
+    top: -50px;
+    opacity: 0;
+}
 .exemple-photo img{
     padding: 10px;
     cursor: pointer;
@@ -226,12 +235,12 @@ img{
 }
 /* Indicators active image style */
 .carousel .carousel-indicators .active img {
-    border: 2px solid #de8802;
+    border: 2px solid #e34332;
     opacity: 0.5;
 }
 /* PORTRAITS */
 #portraits{
-    background: #ae6a02;
+    background: #de2902;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -265,7 +274,7 @@ img{
     padding-right: 0;
   }
 }
-#portraits div .button{
+#portraits div .btn-portraits{
     text-align: center;
 }
 #portraits a{
@@ -372,6 +381,7 @@ and (max-width : 568px) {
 and (min-width : 320px) 
 and (max-width : 568px) {
   .logo{
+    height: 85%;
     width: 280px;
     margin: 0 auto;  
     }
