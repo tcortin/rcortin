@@ -76,6 +76,7 @@ img{
 }
 .navbar-nav li a:hover, .navbar-nav li.active a{
     color: #e34332 !important;
+    background-color: #fff !important;
 }
 .navbar-default .navbar-toggle{
     border-style: none;
