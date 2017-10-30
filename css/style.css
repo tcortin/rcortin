@@ -3,7 +3,9 @@ html, body{
     height: 100%;
 }
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;    
+	margin: 0; padding: 0; /* annulation des marges */
+	/* overflow: hidden; */
 }
 img{
     max-width: 100%;
@@ -23,7 +25,7 @@ img{
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px 20px;
-    transition: all 0.3s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
 }
 .button:hover{
     background: #ee9480;
@@ -44,7 +46,6 @@ img{
     background-image: none;
     color: #e34332;
 }
-
 
 /* MENU */
 .navbar{
@@ -86,7 +87,6 @@ img{
 }
 /* HOME */
 #home{
-    background: url('../images/remy01.jpg')top center no-repeat fixed;
     background-size: cover;
     height: 100%;
     text-align: center;
@@ -100,6 +100,18 @@ img{
     width: 385px;
     margin: 0 auto;  
     }
+}
+#home a img{
+    width: 55px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+#home a img:hover{
+    width: 60px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s; 
 }
 #presentation{
     background: #fff;
@@ -138,7 +150,6 @@ img{
 }
 /* WALL */
 #wall{
-    background: url('../images/remy02.jpg')top left no-repeat fixed;
     background-size: cover;
     height: 100%;
     min-height: 915px;
@@ -212,15 +223,16 @@ img{
 .exemple-photo img{
     padding: 10px;
     cursor: pointer;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     transition: 0.7s;
 }
 .exemple-photo img:hover{
-    filter: none;
-    -webkit-filter: none;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    transition: 0.7s;
 }
 .model-exemple a{
     margin-top: 20px;

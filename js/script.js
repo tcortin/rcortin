@@ -33,4 +33,3 @@ $(window).scroll(function () {
         $('.exemple-photo').delay(500).animate({ top: 0, opacity: 1 }, 400);
     }
 });
-
