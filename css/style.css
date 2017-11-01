@@ -144,7 +144,7 @@ and (max-width: 1024px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
   .logo{
     height: 85%;
     width: 280px;
@@ -196,7 +196,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     .paragraphe{
         width: 280px;
         word-wrap: break-word;
@@ -220,7 +220,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     .white-bloc{
         height: 90px;  
     }
@@ -238,7 +238,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     .wall-info{
         margin:0 auto;
         width: 280px;
@@ -258,7 +258,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     #wall .title{
         height: 72px;
         width: 240px;
@@ -283,7 +283,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     .wall-block{
         width: 280px;
         height: fit-content;
@@ -310,7 +310,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px)
+and (max-width : 736px)
 and (orientation : portrait) {
     #model{
         background-color: #fff;
@@ -331,7 +331,7 @@ and (orientation : portrait) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     #model .title{
         width: 240px;
         margin: 0 auto;
@@ -396,7 +396,7 @@ and (max-width : 568px) {
 }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
   #portraits .title{
     height: 85%;
     width: 240px;
@@ -436,7 +436,7 @@ and (max-width : 568px) {
   }
 @media only screen 
 and (min-width : 320px) 
-and (max-width : 568px) {
+and (max-width : 736px) {
     #contact .title{
         width: 300px;
         margin-left: auto;
