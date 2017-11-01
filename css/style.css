@@ -17,6 +17,9 @@ img{
 .container{
     padding: 0;
 }
+.orange{
+    color: #e34332;
+}
 .button{
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,12 +44,14 @@ img{
 .carousel-indicators li.active{
     background:#e34332;
 }
-
+.carousel .carousel-indicators .active img {
+    border: 2px solid #e34332;
+    opacity: 0.5;
+}
 .carousel-control.left, .carousel-control.right {
     background-image: none;
     color: #e34332;
 }
-
 /* MENU */
 .navbar{
     background: #fff;
@@ -85,9 +90,44 @@ img{
 .icon-bar{
     background-color: #0a0a0a !important;
 }
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+  }
 /* HOME */
 #home{
-    background-size: cover;
     height: 100%;
     text-align: center;
 }
@@ -95,9 +135,19 @@ img{
     height: 90%;
     padding-top: 80px;
 }
-@media screen and (max-width: 1024px) {
+@media screen 
+and (max-width: 1024px) {
   .logo{
     width: 385px;
+    margin: 0 auto;  
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+  .logo{
+    height: 85%;
+    width: 280px;
     margin: 0 auto;  
     }
 }
@@ -113,6 +163,7 @@ img{
     -moz-transition: 0.2s;
     transition: 0.2s; 
 }
+/* PRESENTATION */
 #presentation{
     background: #fff;
     padding-top: 70px;
@@ -130,13 +181,11 @@ img{
 #presentation .paragraphe{
     left: 80px;
     opacity: 0;
-}
-#presentation p{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #000;
 }
-.photo{
+#presentation .photo{
     text-align: center;
 }
 .paragraphe{
@@ -145,12 +194,18 @@ img{
     text-align: justify;
     margin: 0 auto;
 }
-.orange{
-    color: #e34332;
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    .paragraphe{
+        width: 280px;
+        word-wrap: break-word;
+        text-align: justify;
+        margin: 0 auto;
+    }
 }
 /* WALL */
 #wall{
-    background-size: cover;
     height: 100%;
     min-height: 915px;
 }
@@ -159,8 +214,15 @@ img{
     height: 140px;    
 }
 @media screen and (max-width: 1024px) {
-  .white-bloc{
-    height: 120px;  
+    .white-bloc{
+        height: 120px;  
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    .white-bloc{
+        height: 90px;  
     }
 }
 .wall-info{
@@ -170,9 +232,17 @@ img{
     margin-left: 350px;
 }
 @media screen and (max-width: 1024px) {
-  .wall-info{
-    margin: 0 auto;
-  }
+    .wall-info{
+        margin: 0 auto;
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    .wall-info{
+        margin:0 auto;
+        width: 280px;
+    }
 }
 #wall .title{
     height: 138px;
@@ -180,11 +250,22 @@ img{
     margin-top: -45px;
 }
 @media screen and (max-width: 1024px) {
-  #wall .title{
-    height: 124px;
-    width: 410px;
-    margin-top: -40px;
-  }
+    #wall .title{
+        height: 124px;
+        width: 410px;
+        margin-top: -40px;
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    #wall .title{
+        height: 72px;
+        width: 240px;
+        margin-top: -23px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .wall-block{
     margin-top: 30px;
@@ -200,6 +281,18 @@ img{
 .wall-block p{
     text-align: left;
 }
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    .wall-block{
+        width: 280px;
+        height: fit-content;
+        margin-top: 30px;
+        word-wrap: break-word;
+        background:rgba(255, 255, 255, 0.5);
+        outline: 15px solid rgba(255, 255, 255, 0.5);    
+    }
+}
 /* MODEL */
 #model{ 
     background: url('../images/model-bg.jpg')top center no-repeat;
@@ -210,9 +303,41 @@ img{
     height: 100%;
     min-height: 925px;
 }
+@media screen and (max-width: 1024px) {
+    #model{
+    background: none;
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px)
+and (orientation : portrait) {
+    #model{
+        background-color: #fff;
+        background-size: cover;
+        height: 100%;
+        min-height: 1450px;
+    }
+}
 #model .title{
     padding-top: 90px;
     text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    #model .title{
+        width: 410px;
+        margin: 0 auto;
+    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    #model .title{
+        width: 240px;
+        margin: 0 auto;
+        padding-top: 90px;
+        text-align: center;
+    }
 }
 .model-exemple{
     text-align: center;
@@ -240,16 +365,6 @@ img{
 .model-exemple a{
     margin-top: 20px;
     cursor: pointer;
-}
-@media screen and (max-width: 1024px) {
-  #model{
-    background: none;
-  }
-}
-/* Indicators active image style */
-.carousel .carousel-indicators .active img {
-    border: 2px solid #e34332;
-    opacity: 0.5;
 }
 /* PORTRAITS */
 #portraits{
@@ -279,6 +394,18 @@ img{
     padding-right: 0;
   }
 }
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+  #portraits .title{
+    height: 85%;
+    width: 240px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #portraits div.btn-portraits{
     text-align: center;   
     cursor: pointer;
@@ -299,6 +426,22 @@ img{
     text-align: center;
     margin-bottom: 60px;
     padding-top: 90px;
+}
+@media screen and (max-width: 1024px) {
+    #contact .title{
+      width: 490px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+    #contact .title{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 #contact .heading h2{
     text-transform: uppercase;
@@ -359,6 +502,7 @@ img{
     color: #fff;
     background-color: #e34332;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
     display: inline-block;
     padding: 10px 20px;
     transition: all 0.2s ease-in 0s;
@@ -408,153 +552,3 @@ footer .copyright{
     font-size: 10px;
     color: rgba(0, 0, 0, 0.8);
 }
-/* 320 */
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px)
-and (orientation : portrait) {
-    #home{
-        background: url('../images/remy01-568.jpg')top center no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-attachment: scroll;
-        height: 100%;
-    }
-}
-@media only screen 
-and (min-width : 569px) 
-and (max-width : 1024px)
-and (orientation : portrait) {
-    #home{
-        background: url('../images/remy01-1024.jpg')top center no-repeat fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-attachment: fixed;
-        height: 100%;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px)
-and (orientation : portrait) {
-    #wall{
-        background: url('../images/remy02-568.jpg')top right no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-attachment: scroll;
-        height: 100%;
-        min-height: 790px;
-    }
-}
-@media only screen 
-and (min-width : 569px) 
-and (max-width : 1024px)
-and (orientation : portrait) {
-    #wall{
-        background: url('../images/remy02-1024.jpg')top right no-repeat fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-attachment: fixed;
-        height: 100%;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-  .white-bloc{
-    height: 90px;  
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-    .wall-info{
-        margin:0 auto;
-        width: 280px;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-    #wall .title{
-        height: 72px;
-        width: 240px;
-        margin-top: -23px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-    .wall-block{
-        width: 280px;
-        height: fit-content;
-        margin-top: 30px;
-        word-wrap: break-word;
-        background:rgba(255, 255, 255, 0.5);
-        outline: 15px solid rgba(255, 255, 255, 0.5);    
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-  .logo{
-    height: 85%;
-    width: 280px;
-    margin: 0 auto;  
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-    .paragraphe{
-        width: 280px;
-        word-wrap: break-word;
-        text-align: justify;
-        margin: 0 auto;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-    #model .title{
-        width: 240px;
-        margin: 0 auto;
-        padding-top: 90px;
-        text-align: center;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px)
-and (orientation : portrait) {
-    #model{
-        background-color: #fff;
-        background-size: cover;
-        height: 100%;
-        min-height: 1450px;
-    }
-}
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-  #portraits .title{
-    height: 85%;
-    width: 240px;
-    margin: 0 auto;
-    padding-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-/* 960 */
-/* 1024 */
