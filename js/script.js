@@ -24,12 +24,12 @@ function clickIE4(){ if (event.button==2){ return false; } } function clickNS4(e
 $(window).scroll(function () { 
 
     if ($(this).scrollTop() > 200 && !$(this).data('revealed')) {
-        $('.paragraphe').delay(500).animate({ left: 0, opacity: 1 }, 400);
+        $('.paragraphe').delay(500).animate({ left: 0, opacity: 1 }, 1000);
     }
     if ($(this).scrollTop() > 1000 && !$(this).data('revealed')) {
-        $('.btn-wall').delay(500).animate({ opacity: 1 }, 400);
+        $('.btn-wall').delay(500).animate({ opacity: 1 }, 1000);
     }
     if ($(this).scrollTop() > 1800 && !$(this).data('revealed')) {
-        $('.exemple-photo').delay(500).animate({ top: 0, opacity: 1 }, 400);
+        $('.exemple-photo').delay(500).animate({ top: 0, opacity: 1 }, 1000);
     }
 });
