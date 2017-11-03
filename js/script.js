@@ -34,11 +34,12 @@ $(window).scroll(function () {
     }
 });
 
+/* Swipe */
 $(document).ready(function() {  
-    $("#Portraits-carousel").swiperight(function() {  
+    $(".carousel").swiperight(function() {  
        $(this).carousel('prev');  
     });  
-    $("#Portraits-carousel").swipeleft(function() {  
+    $(".carousel").swipeleft(function() {  
        $(this).carousel('next');  
     });  
 });
