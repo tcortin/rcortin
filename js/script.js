@@ -33,3 +33,15 @@ $(window).scroll(function () {
         $('.exemple-photo').delay(500).animate({ top: 0, opacity: 1 }, 1000);
     }
 });
+
+$(".carousel").swipe({
+    
+      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+    
+      },
+      allowPageScroll:"vertical"
+    
+    });

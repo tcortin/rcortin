@@ -18,13 +18,13 @@ img{
     padding: 0;
 }
 .orange{
-    color: #e34332;
+    color: #de2902;
 }
 .button{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
-    background-color: #e34332;
+    background-color: #de2902;
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px 20px;
@@ -38,24 +38,43 @@ img{
 .btn-wall{
     opacity: 0;
 }
+.carousel-controls{
+    position:relative; 
+     width:300px;
+     margin:0 auto;
+   }  
+.carousel-indicators{
+    top: 100%; 
+    }
 .carousel-indicators li{
-    border: 1px solid #e34332;
+    border: 1px solid #de2902;
 }
 .carousel-indicators li.active{
-    background:#e34332;
+    background:#de2902;
 }
 .carousel .carousel-indicators .active img {
-    border: 2px solid #e34332;
+    border: 2px solid #de2902;
     opacity: 0.5;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none;
-    color: #e34332;
+    color: #de2902;
+}
+.carousel-caption h3{
+    text-shadow: 3px 0 0 rgba(0,0,0,0.5), -3px 0 0 rgba(0,0,0,0.5), 0 3px 0 rgba(0,0,0,0.5), 0 -3px 0 rgba(0,0,0,0.5), 2px 2px rgba(0,0,0,0.5), -2px -2px 0 rgba(0,0,0,0.5), 
+    2px -2px 0 rgba(0,0,0,0.5), -2px 2px 0 rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    font-size: 36px;
+}
+.carousel-caption h2{
+    text-shadow: 2px 0 0 rgba(0,0,0,0.5), -2px 0 0 rgba(0,0,0,0.5), 0 2px 0 rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5), 1px 1px rgba(0,0,0,0.5), -1px -1px 0 rgba(0,0,0,0.5), 
+    1px -1px 0 rgba(0,0,0,0.5), -1px 1px 0 rgba(0,0,0,0.5);
+    font-size: 18px;
 }
 /* MENU */
 .navbar{
     background: #fff;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 4px;
 }
 .navbar-nav li{
@@ -81,7 +100,7 @@ img{
     color: #0a0a0a !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a{
-    color: #e34332 !important;
+    color: #de2902 !important;
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle{
@@ -133,7 +152,7 @@ img{
 }
 .logo{
     height: 90%;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 @media screen 
 and (max-width: 1024px) {
@@ -167,6 +186,7 @@ and (max-width : 736px) {
 #presentation{
     background: #fff;
     padding-top: 70px;
+    padding-bottom: 70px
 }
 #presentation h1{
     font-family: 'Shadows Into Light', sans-serif;
@@ -204,10 +224,22 @@ and (max-width : 736px) {
         margin: 0 auto;
     }
 }
+/* C+ */
+#animateurs{
+    height: 100%;
+    min-height: 970px;
+}
 /* WALL */
 #wall{
     height: 100%;
-    min-height: 915px;
+    min-height: 970px;
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 736px) {
+    #wall{
+        min-height: 680px;  
+    }
 }
 .white-bloc{
     background-color: #fff;
@@ -227,7 +259,7 @@ and (max-width : 736px) {
 }
 .wall-info{
     text-align: center;
-    width: 350px;
+    width: 458px;
     max-height: 100%;
     margin-left: 350px;
 }
@@ -254,6 +286,8 @@ and (max-width : 736px) {
         height: 124px;
         width: 410px;
         margin-top: -40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media only screen 
@@ -270,16 +304,15 @@ and (max-width : 736px) {
 .wall-block{
     margin-top: 30px;
     word-wrap: break-word;
-    background:rgba(255, 255, 255, 0.5);
-    outline: 15px solid rgba(255, 255, 255, 0.5);    
+ 
 }
 .wall-block a{
     margin-top: 30px;
     margin-bottom: 15px;
     cursor: pointer;    
 }
-.wall-block p{
-    text-align: left;
+.wall-block img{
+    cursor: pointer;    
 }
 @media only screen 
 and (min-width : 320px) 
@@ -288,9 +321,7 @@ and (max-width : 736px) {
         width: 280px;
         height: fit-content;
         margin-top: 30px;
-        word-wrap: break-word;
-        background:rgba(255, 255, 255, 0.5);
-        outline: 15px solid rgba(255, 255, 255, 0.5);    
+        word-wrap: break-word;    
     }
 }
 /* MODEL */
@@ -458,7 +489,7 @@ and (max-width : 736px) {
     color: #fff;
 }
 #contact .orange{
-    color: #e34332;
+    color: #de2902;
 }
 #contact input.form-control{
     height: 35px;
@@ -486,7 +517,7 @@ and (max-width : 736px) {
     max-height: 150px;
 }
 #contact .comment{
-    color: #e34332;
+    color: #de2902;
     font-style: italic;
     font-size: 12px;
     height: 18px;
@@ -500,7 +531,7 @@ and (max-width : 736px) {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
-    background-color: #e34332;
+    background-color: #de2902;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0;
     display: inline-block;
