@@ -34,14 +34,11 @@ $(window).scroll(function () {
     }
 });
 
-$(".carousel").swipe({
-    
-      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-    
-        if (direction == 'left') $(this).carousel('next');
-        if (direction == 'right') $(this).carousel('prev');
-    
-      },
-      allowPageScroll:"vertical"
-    
-    });
+$(document).ready(function() {  
+    $("#Portraits-carousel").swiperight(function() {  
+       $(this).carousel('prev');  
+    });  
+    $("#Portraits-carousel").swipeleft(function() {  
+       $(this).carousel('next');  
+    });  
+});

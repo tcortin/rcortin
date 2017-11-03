@@ -42,10 +42,17 @@ img{
     position:relative; 
      width:300px;
      margin:0 auto;
-   }  
+}  
 .carousel-indicators{
     top: 100%; 
-    }
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 736px) {
+    .carousel-indicators{
+    display: none;
+  }
+}
 .carousel-indicators li{
     border: 1px solid #de2902;
 }
@@ -66,10 +73,26 @@ img{
     letter-spacing: 2px;
     font-size: 36px;
 }
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 736px) {
+    .carousel-caption h3{
+    text-shadow: 2px 0 0 rgba(0,0,0,0.5), -2px 0 0 rgba(0,0,0,0.5), 0 2px 0 rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5), 1px 1px rgba(0,0,0,0.5), -1px -1px 0 rgba(0,0,0,0.5), 
+    1px -1px 0 rgba(0,0,0,0.5), -1px 1px 0 rgba(0,0,0,0.5);
+    font-size: 18px;
+  }
+}
 .carousel-caption h2{
     text-shadow: 2px 0 0 rgba(0,0,0,0.5), -2px 0 0 rgba(0,0,0,0.5), 0 2px 0 rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5), 1px 1px rgba(0,0,0,0.5), -1px -1px 0 rgba(0,0,0,0.5), 
     1px -1px 0 rgba(0,0,0,0.5), -1px 1px 0 rgba(0,0,0,0.5);
     font-size: 18px;
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 736px) {
+    .carousel-caption h2{
+    font-size: 12px;
+  }
 }
 /* MENU */
 .navbar{
@@ -254,7 +277,7 @@ and (max-width : 736px) {
 and (min-width : 320px) 
 and (max-width : 736px) {
     .white-bloc{
-        height: 90px;  
+        height: 100px;  
     }
 }
 .wall-info{
@@ -366,7 +389,7 @@ and (max-width : 736px) {
     #model .title{
         width: 240px;
         margin: 0 auto;
-        padding-top: 90px;
+        padding-top: 80px;
         text-align: center;
     }
 }
