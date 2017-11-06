@@ -72,7 +72,8 @@
         
         <section id="portraits">
             <div class="title">
-                <img src="images/portraits.png" alt="portraits">
+                <img src="images/portraits.png" class="default-size" alt="portraits">
+                <img src="images/portraits-sm.png" class="sm-size" alt="portraits">
             </div>
             <div class="btn-portraits">
                 <a class="button" data-toggle="modal" data-target="#Portraits-modal">EN VOIR PLUS</a>
@@ -272,7 +273,9 @@
                                 </a>                                
                             </div>
                         </div>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,7 +424,9 @@
                                     </a>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -487,7 +492,7 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-body">
-                            <div id="Model-carousel" class="carousel slide" data-ride="carousel">
+                            <div id="Model-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                                 <ol class="carousel-indicators">
                                     <li data-target="#Model-carousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#Model-carousel" data-slide-to="1"></li>
@@ -538,7 +543,9 @@
                                 </a>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        </div>
                     </div>
                 </div>
             </div>           
