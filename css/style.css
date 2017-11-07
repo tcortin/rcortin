@@ -295,7 +295,7 @@ and (max-width : 736px) {
 and (min-width : 320px) 
 and (max-width : 736px) {
     #wall{
-        min-height: 700px;
+        min-height: 690px;
     }
     .white-bloc{
         max-height: 100px;  
