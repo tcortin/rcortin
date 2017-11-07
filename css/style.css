@@ -238,11 +238,10 @@ and (max-width : 736px) {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #000;
-    transition: 1s; 
-    width: 400px;
+    transition: 1s;
+    width: 400px;    
     word-wrap: break-word;
     text-align: justify;
-    margin: 0 auto;
 }
 #presentation .photo{
     text-align: center;
@@ -250,7 +249,7 @@ and (max-width : 736px) {
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 736px) {
-    .paragraphe{
+    #presentation .paragraphe{
         width: 280px;
         word-wrap: break-word;
         text-align: justify;
@@ -277,13 +276,10 @@ and (max-width : 736px) {
     margin-left: 350px;
 }
 #wall .title{
-    height: 138px;
-    width: 458px;
     margin-top: -45px;
 }
 .wall-block{
     margin-top: 30px;
-    word-wrap: break-word;
     opacity: 0;
     transition: 1s;
 }
@@ -299,18 +295,18 @@ and (max-width : 736px) {
 and (min-width : 320px) 
 and (max-width : 736px) {
     #wall{
-        min-height: 680px;  
+        min-height: 740px;
     }
     .white-bloc{
         height: 100px;  
     }
     .wall-info{
-        margin:0 auto;
+        margin: 0 auto;
         width: 280px;
     }
     #wall .title{
-        height: 72px;
-        width: 240px;
+        max-height: 72px;
+        max-width: 240px;
         margin-top: -23px;
         margin-left: auto;
         margin-right: auto;
