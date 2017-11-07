@@ -21,15 +21,25 @@ $(function(){
 
 
 /* Animer les elements à l'affichage */
-$(window).scroll(function () { 
+var $win = $(window);
+var $stat = $('.animate');
 
-    if ($(this).scrollTop() > 200 && !$(this).data('revealed')) {
-        $('.paragraphe').delay(500).animate({ left: 0, opacity: 1 }, 1000);
-    }
-    if ($(this).scrollTop() > 1000 && !$(this).data('revealed')) {
-        $('.btn-wall').delay(500).animate({ opacity: 1 }, 1000);
-    }
-    if ($(this).scrollTop() > 1800 && !$(this).data('revealed')) {
-        $('.exemple-photo').delay(500).animate({ top: 0, opacity: 1 }, 1000);
-    }
-});
+$win.on('scroll', function () {
+    var scrollTop = $win.scrollTop();
+
+    $stat.each(function () {
+        var $self = $(this);
+        var prev=$self.offset();
+      	console.log(scrollTop);
+        console.log(prev.top);
+        if ( (scrollTop - prev.top) > -550) {
+          $self.css('opacity', '1');
+          $self.css('left', '0');
+          $self.css('top', '0');
+        } else {
+          console.log('n');
+        }
+   
+    });
+
+}).scroll();
