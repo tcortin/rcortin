@@ -233,7 +233,7 @@ and (max-width : 736px) {
     margin-bottom: 20px;
 }
 #presentation .paragraphe{
-    left: 80px;
+    left: 50px;
     opacity: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -295,7 +295,7 @@ and (max-width : 736px) {
 and (min-width : 320px) 
 and (max-width : 736px) {
     #wall{
-        min-height: 740px;
+        min-height: 700px;
     }
     .white-bloc{
         height: 100px;  
