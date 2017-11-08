@@ -293,7 +293,7 @@ and (max-width : 736px) {
 and (min-width : 320px) 
 and (max-width : 736px) {
     #animateurs{
-        min-height: 720px;
+        min-height: 610px;
     }
     #animateurs .white-bloc{
         height: 80px;
@@ -305,7 +305,7 @@ and (max-width : 736px) {
         margin-top: 20px;
     }
     #animateurs .vignettes img{
-        width: 140px;
+        width: 120px;
     }
 }
 /* WALL */
