@@ -347,10 +347,6 @@ and (orientation : landscape) {
     height: 100%;
     min-height: 980px;
 }
-#wall .white-bloc{
-    background-color: #fff;
-    height: 140px;    
-}
 .wall-info{
     text-align: center;
     width: 458px;
@@ -379,9 +375,6 @@ and (max-width : 736px) {
     #wall{
         min-height: 690px;
     }
-    #wall .white-bloc{
-        max-height: 100px;  
-    }
     .wall-info{
         margin: 0 auto;
         width: 280px;
@@ -402,9 +395,6 @@ and (max-width : 736px) {
     }
 }
 @media screen and (max-width: 1024px) {
-    .white-bloc{
-        height: 120px;  
-    }
     .wall-info{
         margin: 0 auto;
     }
