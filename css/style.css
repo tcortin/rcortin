@@ -358,7 +358,7 @@ and (orientation : landscape) {
     margin-left: 350px;
 }
 #wall .title{
-    margin-top: -45px;
+    padding-top: 90px;
 }
 .wall-block{
     margin-top: 30px;
@@ -389,7 +389,8 @@ and (max-width : 736px) {
     #wall .title{
         max-height: 72px;
         max-width: 240px;
-        margin-top: -23px!important;
+        padding-top: 80px;
+        padding-bottom: 60px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -410,7 +411,7 @@ and (max-width : 736px) {
     #wall .title{
         height: 124px;
         width: 410px;
-        margin-top: -40px;
+        padding-bottom: 125px;
         margin-left: auto;
         margin-right: auto;
     }
