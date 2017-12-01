@@ -383,7 +383,7 @@ and (max-width : 736px) {
         max-height: 72px;
         max-width: 240px;
         padding-top: 80px;
-        padding-bottom: 60px;
+        padding-bottom: 60px!important;
         margin-left: auto;
         margin-right: auto;
     }
