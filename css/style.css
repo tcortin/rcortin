@@ -28,11 +28,11 @@ img{
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px 20px;
-    transition: all 0.2s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
 }
 .button:hover{
-    background: #ee9480;
-    color: #fff;
+    background: #fff;
+    color: #de2902;
     text-decoration: none;
 }
 .carousel-controls{
