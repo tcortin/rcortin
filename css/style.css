@@ -35,33 +35,12 @@ img{
     color: #de2902;
     text-decoration: none;
 }
-.carousel-controls{
-    position:relative; 
-    width:300px;
-    margin:0 auto;
-}
-.carousel-indicators{
-    top:100%; 
-}
-.carousel-indicators li{
-    border: 1px solid #de2902;
-}
-.carousel-indicators li.active{
-    background:#de2902;
-}
-.carousel .carousel-indicators .active img {
-    border: 2px solid #de2902;
-    opacity: 0.5;
-}
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
-    color: #de2902;
-}
-.modal-body{
+div[class*="modal"]{
     padding: 0;
+    border: 0;   
 }
 .modal-content{
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
 }
 .modal-content button{
@@ -77,44 +56,36 @@ img{
     background: #fff;
     transition: all 0.2s ease-in 0s;
 }
-.modal-footer{
-    border: 0;
-}
-.carousel-caption{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 85%;
-    left: 0;
-    padding: 0;
-}
-.carousel-caption h3{
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: 20px;
-    line-height: 30px;
-    background: rgba(0, 0, 0, 0.5);
-}
-.carousel-caption h2{
-    color: #fff;
+.item h4{
+    color: #000;
     font-size: 15px;
-    line-height: 30px;
-    background: rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+.item h5{
+    font-size: 12px;
+}
+.carousel-indicators{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.carousel-indicators li{
+    border: 1px solid grey;
+}
+.carousel-indicators li.active{
+    background:#de2902;
+    border: 1px solid #de2902;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: #de2902;
 }
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 736px) {
-    .carousel-caption{
-        top: 80%;
-    }
-    .carousel-caption h3{
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .carousel-caption h2{
-        font-size: 10px;
-        line-height: 15px;
-    }
     .carousel-indicators{
     display: none;
   }
